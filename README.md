@@ -3,9 +3,9 @@
 An example of CSS Grid layout adapted even for IE 10(+) and Edge 12(+), but more important an example of a simple Progressive Web App, 
 offering functionalities such as:
 
--precaching of (static) assets;
--offline mode implementation;
--add to home screen functionality;
+1) precaching of (static) assets;
+2) offline mode implementation;
+3) add to home screen functionality;
 
 Progressive Web Apps are user experiences that have the reach of the web, and are:
 
