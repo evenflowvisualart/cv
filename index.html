@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume template</title>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+    <meta name="description" content="Simple resume template">
+    <meta name="keywords" content="resume template, cv template, portfolio website, bubnic resume">
+   <meta name="theme-color" content="rgba(255,255,255,0.8)"/>
+    <style>
+      
+    body{
+        background: #fc4a1a;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(left, #f7b733, #fc4a1a) fixed;
+        background: -o-linear-gradient(left, #f7b733, #fc4a1a) fixed;
+        background: linear-gradient(to right, #f7b733, #fc4a1a) fixed;
+        background-image: background: -webkit-linear-gradient(left, #f7b733, #fc4a1a) fixed;
+        background-image: background: -o-linear-gradient(left, #f7b733, #fc4a1a) fixed;
+        background-image: background: linear-gradient(to right, #f7b733, #fc4a1a) fixed;  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: rgba(255,255,255,.8);
+        font-family:'Space Mono',monospace;
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+        overflow-y:scroll;
+    }
+        
+        
+    .grid{
+        display: grid;
+        display: -ms-grid;
+        max-width: 1204px;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-columns: 1fr 10px 1fr 10px;
+        grid-template-areas:
+        "about work"
+        "tech tech"
+        "social social";
+        grid-gap: 10px;
+        grid-auto-rows:minmax(100px, auto);
+        position: fixed; 
+        overflow: hidden;
+        -webkit-box-shadow: 14px 14px 35px 1px rgba(0,0,0,0.25);
+        -moz-box-shadow: 2px 27px 35px 1px rgba(0,0,0,0.25);
+        box-shadow: 22px 27px 35px 1px rgba(0,0,0,0.25);
+        margin: 2em 1em;
+        top:0;
+        bottom:0;
+    }
+
+
+    .backlight {
+        background-color: chocolate;
+        position: absolute;
+        max-width: 1185px;
+        top: 20px;
+        left: 20px;
+        opacity: 0.3;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+    }
+
+
+    .holder {
+        position: relative;
+        max-width: 1204px;
+        margin: 2em auto;
+    }
+
+
+    .grid div {
+        border-radius: 5px;
+        padding: 1em;
+    }
+        
+    #addToHomeScreen {
+        z-index:9999;
+        -webkit-user-select:none;
+        user-select:none;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+        -webkit-touch-callout:none;
+        touch-callout:none;
+        width:240px;
+        font-size:15px;
+        padding:12px 14px;
+        text-align:left;
+        font-family:helvetica;
+        background-image:-webkit-gradient(linear,0 0,0 100%,color-stop(0,#fff),color-stop(0.02,#eee),color-stop(0.98,#ccc),color-stop(1,#a3a3a3));
+        border:1px solid #505050;
+        -webkit-border-radius:8px;
+        -webkit-background-clip:padding-box;
+        color:#333;
+        text-shadow:0 1px 0 rgba(255,255,255,0.75);
+        line-height:130%;
+        -webkit-box-shadow:0 0 4px rgba(0,0,0,0.5);
+    }
+        
+    #addToHomeScreen .addToHomeArrow {
+        position:absolute;
+        background-image:-webkit-gradient(linear,0 0,100% 100%,color-stop(0,rgba(204,204,204,0)),color-stop(0.4,rgba(204,204,204,0)),color-stop(0.4,#ccc));
+        border-width:0 1px 1px 0;
+        border-style:solid;
+        border-color:#505050;
+        width:16px; height:16px;
+        -webkit-transform:rotateZ(45deg);
+        bottom:-9px;
+        left:50%;
+        margin-left:-8px;
+        -webkit-box-shadow:inset -1px -1px 0 #a9a9a9;
+        -webkit-border-bottom-right-radius:2px;
+    }
+        
+    #addToHomeScreen .addToHomeClose {
+        -webkit-box-sizing:border-box;
+        position:absolute;
+        right:4px;
+        top:4px;
+        width:18px;
+        height:18px; line-height:14px;
+        text-align:center;
+        text-indent:1px;
+        -webkit-border-radius:9px;
+        background:rgba(0,0,0,0.12);
+        color:#888;
+        -webkit-box-shadow:0 1px 0 #fff;
+        font-size:16px;
+    }
+
+    #addToHomeScreen .addToHomePlus {
+        font-weight:bold;
+        font-size:1.3em;
+    }
+        
+    </style>
+    <link rel="manifest" href="manifest.json">
+    <script src="add2home.js" async></script>
+</head>
+<body>
+    <div id="content">
+    <div class ="holder">
+    <div class="backlight"></div>
+    <div class="grid">
+        <div class="about">
+            <div class="language">
+                <a href="index.html" class="srb button">sr</a>
+                <a href="english.html" class="eng button">en</a>
+            </div>
+            <span class="fetch-ios">
+                <a href="MarinaBubnic_CV.pdf" class="button">Rezime </a>
+            </span>
+            <div class="img">
+                <picture>
+                    <source srcset="img/moi.jp2" type="image/jp2"> 
+                    <img class="filter fade"src="img/moi.jpg" alt="Profile picture">
+                </picture>
+                <p class="bit-top"></p>
+                <p class="bit-top-left"></p>
+                <p class="bit-top-right"></p>
+                <p class="bit-top-right-2"></p>
+                <p class="bit-bottom-left"></p>
+                <p class="bit-bottom-left-2"></p>
+                <p class="bit-bottom-right"></p>
+                <p class="bit-bottom-right-2"></p>
+                <p class="name paraf animated ">Marina Bubnic</p>
+            </div>
+            <div class="bio fade-one ">
+                <p>ZANIMANJE:kliktanje po tastaturi, "pomeranje" piksela, i povremeno škljocanje fotoaparatom;</p>
+                <p>VOLI: jasan, intuitivan i upotrebljiv kod, uzbudljivu i čistu estetiku, i magiju Fotošopa;</p>
+                <p>NE VOLI: besplatan rad;</p>
+                <p>IZAZOV: ispravljanje malih i velikih bagova, učenje novih tehnologija i pristupa, hvatanje u koštac sa "specijalanim" slučajevima pod nazivom iOS i IE;</p>
+                <p>TOP VEŠTINE: kreativno rešavanje problema, brzo usvajanje novih znanja, nepokolebljivost;</p>
+                <p>HOBI: scensko šminkanje i kuvanje.</p>
+            </div>
+        </div>
+        
+        <div class="work">
+            <div class="wrap">
+                <input type="radio" class="rnav design"
+                id="slide_1" name="coins" value="1" checked/>
+                <p class="box design">
+                    <br><br>WEB DIZAJN: idejno realizovanje privlačnih, konzistentnih, i svrsishodnih web rešenja, dinamičkog ili statičkog tipa.<br><br>
+                    <a href="https://advokatdjukic.000webhostapp.com">Access URL:<span>Advokat Nemanja Đukić</span></a></p>
+                <label for="slide_1" class="overlay l-design"></label>
+                <input type="radio" class="rnav redesign"
+                id="slide_2" name="coins" value="2"/>
+                <p class="box redesign ">
+                    <br><br>WEB REDIZAJN: redizajniranje i unapređivanje postojećih rešenja prema potrebi klijenta u skladu sa vodećim standardima web dizajna.<br><br><a href="http://diopta.rs/moja-sociva/">Access URL:<span>Moja sočiva online </span></a></p>
+                <label for="slide_2" class="overlay l-redesign"></label>
+                <input type="radio" class="rnav wp"
+                id="slide_3" name="coins" value="3"/>
+                <p class="box wp">
+                    <br><br>WORDPRESS: održavanje i unapređivanje postojećih tema, izrada wp tema na osnovu dizajna, kao i pretvaranje postojećih web rešenja u WP teme.<br><a href="http://diopta.rs">Access URL:<span>Diopta optičarske radnje</span></a></p>
+                <label for="slide_3" class="overlay l-wp"></label>
+                <input type="radio" class="rnav seo"
+                id="slide_4" name="coins" value="4"/>
+                <p class="box seo">
+                    <br><br>OPTIMIZACIJA: osnovna SEO podešavanja, ubacivanje Google analitike, prikaz u offline modu, usklađivanje sa PageSpeed Insights i/ili Lighthouse i dr.</p>
+                <label for="slide_4" class="overlay l-seo"></label>
+                <input type="radio" class="rnav custom"
+                id="slide_5" name="coins" value="5"/>
+                <p class="box custom">
+                    <br><br>PERSONALIZACIJA CMS: pravljenje intuitivnih korisničkih panela prema potrebi klijenta. </p>
+                <label for="slide_5" class="overlay l-custom"></label>
+                <div class="line"></div>
+            </div>
+        </div>
+    
+        <div class="tech">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                <span class="close one">CORE</span>
+                <span class="close two">SHELL</span>
+            </label>
+            <div class="basic">
+                <p>HTML(5)</p>
+                <p>CSS(3)</p>
+                <p>SASS</p>
+                <p>CSS Grid</p>
+                <p>Bootstrap</p>
+            </div>
+            <div class="core">
+                <p class="checked">Javascript</p>
+                <p class="checked">jQuery</p>
+                <p class="checked">PHP+MySQL</p>
+                <p class="checked">Wordpress</p>
+            </div>
+            <div class="core x">
+                <p class="checked">PWA</p>
+                <p class="checked">npm</p>
+                <p class="checked">Git</p>
+                <p class="checked">Github</p>
+            </div>
+            <div class="basic x">
+                <p>Balsamiq</p>
+                <p>Adobe Photoshop</p>
+                <p>Adobe Illustrator</p>
+            </div>
+            <span class="fetch">
+                <a href="MarinaBubnic_CV.pdf" id="cv" class="button">Skini rezime </a>
+            </span>
+        </div>
+        <div class="social">
+            <div class="social-e"><a href="mailto:bubnic.marina@gmail.com"><i class="fa fa-envelope-o" aria-label="email"></i></a></div>
+            <div class="social-ln"><a href="https://rs.linkedin.com/in/evenflowvisualart"><i class="fa fa-linkedin" aria-label="linkedin"></i></a></div>
+            <div class="social-gt"><a href="https://github.com/evenflowvisualart"><i class="fa fa-github" aria-label="github"></i></a></div>
+        </div>
+    </div>
+</div>
+        </div>
+     <noscript id="deferred-styles">
+       <link href="//fonts.googleapis.com/css?family=Anton|Abel|Yanone+Kaffeesatz|Oxygen|Raleway|Anonymous Pro|Space+Mono|VT323" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="add2home.css"/>
+        <link rel="stylesheet" href="style.css"/>
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js" async></script>
+    <script src="app.js" async></script>
+    <script src="ios.js" async></script>
+</body>
+</html>

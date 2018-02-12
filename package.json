@@ -1,0 +1,20 @@
+{
+  "name": "resume_template",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marina Bubnic",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "ember-cli": "^2.18.2",
+    "idb": "^2.0.4",
+    "workbox-sw": "^2.1.2"
+  },
+  "devDependencies": {
+    "ember-cli-moment-shim": "3.5.0",
+    "ember-moment": "7.6.0"
+  }
+}
