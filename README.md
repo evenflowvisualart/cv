@@ -2,11 +2,11 @@
 
 An example of CSS Grid layout adapted even for IE 10(+) and Edge 12(+), with some CSS magic to achieve seamless interactive states without using JavaScript:
 
-> Switch buttons
-> Fade in animation
-> Typewriter animation
-> Press button effect 
-> Transitions
+* Switch buttons
+* Fade in animation
+* Typewriter animation
+* Press button effect 
+* Transitions
 ...and more.
 
 
