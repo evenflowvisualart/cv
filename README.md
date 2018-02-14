@@ -1,7 +1,16 @@
 # cv
 
-An example of CSS Grid layout adapted even for IE 10(+) and Edge 12(+), but more important an example of a simple Progressive Web App, 
-offering functionalities such as:
+An example of CSS Grid layout adapted even for IE 10(+) and Edge 12(+), with some CSS magic to achieve seamless interactive states without using JavaScript:
+
+> Switch buttons
+> Fade in animation
+> Typewriter animation
+> Press button effect 
+> Transitions
+...and more.
+
+
+Also, an example of a simple Progressive Web App, offering functionalities such as:
 
 1) precaching of (static) assets;
 2) offline mode implementation;
