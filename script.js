@@ -3,19 +3,12 @@ $(document).ready(function(){
 $('a.button').click(function(e){
     e.preventDefault();
     var href = this.href;
-    $.ajax({
-        sync:false,
-        async:true,
-        url: href,
-        type: 'GET',
-        data: {},
-        dataType: 'html',
-        success: function(data){
-         $('#content').html(data);
-        }
-    });
+    $.get( href, function( data ) {
+      $('#content').html(data);
+      console.log("success" );
+    })
 });
-    
+
     
  $('body').on('click','.one',function(){
     $('.tech p.checked').removeClass('checked');
